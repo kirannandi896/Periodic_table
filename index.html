@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js"></script>
+</head>
+
+<body onload="brython()">
+  <script type="text/python" src="pyscript.py">
+  </script>
+  <h1>Mordern Periodic Table</h1>
+  <table align="center">
+    <tr>
+      <td class="nonmtl">
+        <button id="h" name="n1hydrogen">
+          <sup>1</sup>
+          <h3>H</h3>
+          <p>Hydrogen <br><small>1.0078</small></p>
+        </button>
+      </td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="noble">
+        <button id="he" name="n2helium">
+          <sup>2</sup>
+          <h3>He</h3>
+          <p>Helium <br><small>4.0026</small></p>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="amtl">
+        <button id="li" name="n3lithium">
+          <sup>3</sup>
+          <h3>Li</h3>
+          <p>Lithium <br><small>6.9410</small></p>
+        </button>
+      </td>
+      <td class="aemtl">
+        <button id="be" name="n4beryllium">
+          <sup>4</sup>
+          <h3>Be</h3>
+          <p>Beryllium <br><small>9.0122</small> </p>
+        </button>
+      </td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="metalloid">
+        <button id="b" name="n5boron">
+          <sup>5</sup>
+          <h3>B</h3>
+          <p>Boron <br><small>10.811</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="c" name="n6carbon">
+          <sup>6</sup>
+          <h3>C</h3>
+          <p>Carbon <br><small>12.0107</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="n" name="n7nitrogen">
+          <sup>7</sup>
+          <h3>N</h3>
+          <p>Nitrogen <br><small>14.0067</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="o" name="n8oxygen">
+          <sup>8</sup>
+          <h3>O</h3>
+          <p>Oxygen <br><small>15.9994</small></p>
+        </button>
+      </td>
+      <td class="halo">
+        <button id="f" name="n9fluorine">
+          <sup>9</sup>
+          <h3>F</h3>
+          <p>Fluorine <br><small>18.9984</small></p>
+        </button>
+      </td>
+      <td class="noble">
+        <button id="ne" name="n10neon">
+          <sup>10</sup>
+          <h3>Ne</h3>
+          <p>Neon <br><small>20.1797</small></p>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="amtl">
+        <button id="na" name="n11sodium">
+          <sup>11</sup>
+          <h3>Na</h3>
+          <p>Sodium <br><small>22.9897</small></p>
+        </button>
+      </td>
+      <td class="aemtl">
+        <button id="mg" name="n12magnesium">
+          <sup>12</sup>
+          <h3>Mg</h3>
+          <p>Magnesium <br><small>24.305</small></p>
+        </button>
+      </td>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <td class="pmetal">
+        <button id="al" name="n13aluminum">
+          <sup>13</sup>
+          <h3>Al</h3>
+          <p>Aluminium <br><small>26.9815</small></p>
+        </button>
+      </td>
+      <td class="metalloid">
+        <button id="si" name="n14silicon">
+          <sup>14</sup>
+          <h3>Si</h3>
+          <p>Silicon <br><small>28.0855</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="p" name="n15phosphorus">
+          <sup>15</sup>
+          <h3>P</h3>
+          <p>Phosphorus <br><small>30.9738</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="s" name="n16sulfur">
+          <sup>16</sup>
+          <h3>S</h3>
+          <p>Sulfur <br><small>32.065</small></p>
+        </button>
+      </td>
+      <td class="halo">
+        <button id="cl" name="n17chlorine">
+          <sup>17</sup>
+          <h3>Cl</h3>
+          <p>Chlorine <br><small>35.453</small></p>
+        </button>
+      </td>
+      <td class="noble">
+        <button id="ar" name="n18argon">
+          <sup>18</sup>
+          <h3>Ar</h3>
+          <p>Argon <br><small>39.948</small></p>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="amtl">
+        <button id="k" name="n19potassium">
+          <sup>19</sup>
+          <h3>K</h3>
+          <p>Potassium <br><small>39.0983</small></p>
+        </button>
+      </td>
+      <td class="aemtl">
+        <button id="ca" name="n20calcium">
+          <sup>20</sup>
+          <h3>Ca</h3>
+          <p>Calcium <br><small>40.078</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="sc" name="n21scandium">
+          <sup>21</sup>
+          <h3>Sc</h3>
+          <p>Scandium <br><small>44.9559</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="ti" name="n22titanium">
+          <sup>22</sup>
+          <h3>Ti</h3>
+          <p>Titanium <br><small>47.867</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="v" name="n23vanadium">
+          <sup>23</sup>
+          <h3>V</h3>
+          <p>Vanadium <br><small>50.9415</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="cr" name="n24chromium">
+          <sup>24</sup>
+          <h3>Cr</h3>
+          <p>Chromium <br><small>51.9961</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="mn" name="n25manganese">
+          <sup>25</sup>
+          <h3>Mn</h3>
+          <p>Manganese <br><small>54.938</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="fe" name="n26iron">
+          <sup>26</sup>
+          <h3>Fe</h3>
+          <p>Iron <br><small>55.845</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="co" name="n27cobalt">
+          <sup>27</sup>
+          <h3>Co</h3>
+          <p>Cobalt <br><small>58.9332</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="ni" name="n28nickel">
+          <sup>28</sup>
+          <h3>Ni</h3>
+          <p>Nickel <br><small>58.6934</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="cu" name="n29copper">
+          <sup>29</sup>
+          <h3>Cu</h3>
+          <p>Copper <br><small>63.546</small></p>
+        </button>
+      </td>
+      <td class="metal">
+        <button id="zn" name="n30zinc">
+          <sup>30</sup>
+          <h3>Zn</h3>
+          <p>Zinc <br><small>65.38</small></p>
+        </button>
+      </td>
+      <td class="pmetal">
+        <button id="ga" name="n31gallium">
+          <sup>31</sup>
+          <h3>Ga</h3>
+          <p>Gallium <br><small>69.723</small></p>
+        </button>
+      </td>
+      <td class="metalloid">
+        <button id="ge" name="n32germanium">
+          <sup>32</sup>
+          <h3>Ge</h3>
+          <p>Germanium <br><small>72.63</small></p>
+        </button>
+      </td>
+      <td class="metalloid">
+        <button id="as" name="n33arsenic">
+          <sup>33</sup>
+          <h3>As</h3>
+          <p>Arsenic <br><small>74.9216</small></p>
+        </button>
+      </td>
+      <td class="nonmtl">
+        <button id="se" name="n34selenium">
+          <sup>34</sup>
+          <h3>Se</h3>
+          <p>Selenium <br><small>78.96</small></p>
+        </button>
+      </td>
+      <td class="halo">
+        <button id="br" name="n35bromine">
+          <sup>35</sup>
+          <h3>Br</h3>
+          <p>Bromine <br><small>79.904</small></p>
+        </button>
+      </td>
+      <td class="noble">
+        <button id="kr" name="n36krypton">
+          <sup>36</sup>
+          <h3>Kr</h3>
+          <p>Krypton <br><small>83.798</small></p>
+        </button>
+      </td>
+    </tr>
+<tr>
+    <td class="amtl">
+        <button id="rb" name="n37rubidium">
+            <sup>37</sup>
+            <h3>Rb</h3>
+            <p>Rubidium <br><small>85.4678</small></p>
+        </button>
+    </td>
+    <td class="aemtl">
+        <button id="sr" name="n38strontium">
+            <sup>38</sup>
+            <h3>Sr</h3>
+            <p>Strontium <br><small>87.62</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="y" name="n39yttrium">
+            <sup>39</sup>
+            <h3>Y</h3>
+            <p>Yttrium <br><small>88.9058</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="zr" name="n40zirconium">
+            <sup>40</sup>
+            <h3>Zr</h3>
+            <p>Zirconium <br><small>91.224</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="nb" name="n41niobium">
+            <sup>41</sup>
+            <h3>Nb</h3>
+            <p>Niobium <br><small>92.9064</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="mo" name="n42molybdenum">
+            <sup>42</sup>
+            <h3>Mo</h3>
+            <p>Molybdenum <br><small>95.94</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="tc" name="n43technetium">
+            <sup>43</sup>
+            <h3>Tc</h3>
+            <p>Technetium <br><small>98</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ru" name="n44ruthenium">
+            <sup>44</sup>
+            <h3>Ru</h3>
+            <p>Ruthenium <br><small>101.07</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="rh" name="n45rhodium">
+            <sup>45</sup>
+            <h3>Rh</h3>
+            <p>Rhodium <br><small>102.9055</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="pd" name="n46palladium">
+            <sup>46</sup>
+            <h3>Pd</h3>
+            <p>Palladium <br><small>106.42</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ag" name="n47silver">
+            <sup>47</sup>
+            <h3>Ag</h3>
+            <p>Silver <br><small>107.8682</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="cd" name="n48cadmium">
+            <sup>48</sup>
+            <h3>Cd</h3>
+            <p>Cadmium <br><small>112.411</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="in" name="n49indium">
+            <sup>49</sup>
+            <h3>In</h3>
+            <p>Indium <br><small>114.818</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="sn" name="n50tin">
+            <sup>50</sup>
+            <h3>Sn</h3>
+            <p>Tin <br><small>118.71</small></p>
+        </button>
+    </td>
+    <td class="metalloid">
+        <button id="sb" name="n51antimony">
+            <sup>51</sup>
+            <h3>Sb</h3>
+            <p>Antimony <br><small>121.76</small></p>
+        </button>
+    </td>
+    <td class="metalloid">
+        <button id="te" name="n52tellurium">
+            <sup>52</sup>
+            <h3>Te</h3>
+            <p>Tellurium <br><small>127.6</small></p>
+        </button>
+    </td>
+    <td class="halo">
+        <button id="i" name="n53iodine">
+            <sup>53</sup>
+            <h3>I</h3>
+            <p>Iodine <br><small>126.9045</small></p>
+        </button>
+    </td>
+    <td class="noble">
+        <button id="xe" name="n54xenon">
+            <sup>54</sup>
+            <h3>Xe</h3>
+            <p>Xenon <br><small>131.293</small></p>
+        </button>
+    </td>
+</tr>
+<tr>
+    <td class="amtl">
+        <button id="cs" name="n55caesium">
+            <sup>55</sup>
+            <h3>Cs</h3>
+            <p>Cesium <br><small>132.9055</small></p>
+        </button>
+    </td>
+    <td class="aemtl">
+        <button id="ba" name="n56barium">
+            <sup>56</sup>
+            <h3>Ba</h3>
+            <p>Barium <br><small>137.327</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="la" name="laseries">
+            <sup>57-71</sup>
+            <h3> # </h3>
+            <p><small>Lanthanoid Series</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ce" name="n72hafnium">
+            <sup>72</sup>
+            <h3>Hf</h3>
+            <p>Hafnium <br><small>178.49</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ta" name="n73tantalum">
+            <sup>73</sup>
+            <h3>Ta</h3>
+            <p>Tantalum <br><small>180.9479</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="w" name="n74tungsten">
+            <sup>74</sup>
+            <h3>W</h3>
+            <p>Tungsten <br><small>183.84</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="re" name="n75rhenium">
+            <sup>75</sup>
+            <h3>Re</h3>
+            <p>Rhenium <br><small>186.207</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="os" name="n76osmium">
+            <sup>76</sup>
+            <h3>Os</h3>
+            <p>Osmium <br><small>190.23</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ir" name="n77iridium">
+            <sup>77</sup>
+            <h3>Ir</h3>
+            <p>Iridium <br><small>192.217</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="pt" name="n78platinum">
+            <sup>78</sup>
+            <h3>Pt</h3>
+            <p>Platinum <br><small>195.078</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="au" name="n79gold">
+            <sup>79</sup>
+            <h3>Au</h3>
+            <p>Gold <br><small>196.966</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="hg" name="n80mercury">
+            <sup>80</sup>
+            <h3>Hg</h3>
+            <p>Mercury <br><small>200.59</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="tl" name="n81thallium">
+            <sup>81</sup>
+            <h3>Tl</h3>
+            <p>Thallium <br><small>204.3833</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="pb" name="n82lead">
+            <sup>82</sup>
+            <h3>Pb</h3>
+            <p>Lead <br><small>207.2</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="bi" name="n83bismuth">
+            <sup>83</sup>
+            <h3>Bi</h3>
+            <p>Bismuth <br><small>208.9804</small></p>
+        </button>
+    </td>
+    <td class="metalloid">
+        <button id="po" name="n84polonium">
+            <sup>84</sup>
+            <h3>Po</h3>
+            <p>Polonium <br><small>209</small></p>
+        </button>
+    </td>
+    <td class="halo">
+        <button id="at" name="n85astatine">
+            <sup>85</sup>
+            <h3>At</h3>
+            <p>Astatine <br><small>210</small></p>
+        </button>
+    </td>
+    <td class="noble">
+        <button id="rn" name="n86radon">
+            <sup>86</sup>
+            <h3>Rn</h3>
+            <p>Radon <br><small>222</small></p>
+        </button>
+    </td>
+</tr>
+<tr>
+    <td class="amtl">
+        <button id="fr" name="n87francium">
+            <sup>87</sup>
+            <h3>Fr</h3>
+            <p>Francium <br><small>223</small></p>
+        </button>
+    </td>
+    <td class="aemtl">
+        <button id="ra" name="n88radium">
+            <sup>88</sup>
+            <h3>Ra</h3>
+            <p>Radium <br><small>226</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="ac" name="acseries">
+            <sup>89-103</sup>
+            <h3>*</h3>
+            <p><small> Actinoid<br> Series </small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="rf" name="n104rutherfordium"">
+            <sup>104</sup>
+            <h3>Rf</h3>
+            <p style="font-size: 2.5mm;">Rutherfordium <br><small>267</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="db" name="n105dubnium">
+            <sup>105</sup>
+            <h3>Db</h3>
+            <p>Dubnium <br><small>268</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="sg" name="n106seaborgium">
+            <sup>106</sup>
+            <h3>Sg</h3>
+            <p>Seaborgium <br><small>271</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="bh" name="n107bohrium">
+            <sup>107</sup>
+            <h3>Bh</h3>
+            <p>Bohrium <br><small>272</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="hs" name="n108hassium">
+            <sup>108</sup>
+            <h3>Hs</h3>
+            <p>Hassium <br><small>270</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="mt" name="n109meitnerium">
+            <sup>109</sup>
+            <h3>Mt</h3>
+            <p>Meitnerium <br><small>276</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="ds" name="n110darmstadtium">
+            <sup>110</sup>
+            <h3>Ds</h3>
+            <p>Darmstadtium <br><small>281</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="rg" name="n111roentgenium">
+            <sup>111</sup>
+            <h3>Rg</h3>
+            <p>Roentgenium <br><small>280</small></p>
+        </button>
+    </td>
+    <td class="metal">
+        <button id="cn" name="n112copernicium">
+            <sup>112</sup>
+            <h3>Cn</h3>
+            <p>Copernicium <br><small>285</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="nh" name="n113nihonium"">
+            <sup>113</sup>
+            <h3>Nh</h3>
+            <p>Nihonium <br><small>286</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="fl" name="n114flerovium">
+            <sup>114</sup>
+            <h3>Fl</h3>
+            <p>Flerovium <br><small>290</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="mc" name="n115moscovium">
+            <sup>115</sup>
+            <h3>Mc</h3>
+            <p>Moscovium <br><small>290</small></p>
+        </button>
+    </td>
+    <td class="pmetal">
+        <button id="lv" name="n116livermorium">
+            <sup>116</sup>
+            <h3>Lv</h3>
+            <p>Livermorium <br><small>293</small></p>
+        </button>
+    </td>
+    <td class="halo">
+        <button id="ts" name="n117tennessine">
+            <sup>117</sup>
+            <h3>Ts</h3>
+            <p>Tennessine <br><small>294</small></p>
+        </button>
+    </td>
+    <td class="noble">
+        <button id="og" name="n118oganesson">
+            <sup>118</sup>
+            <h3>Og</h3>
+            <p>Oganesson <br><small>294</small></p>
+        </button>
+    </td>
+</tr>
+</table>
+<br><br>
+
+
+
+
+
+
+<table name="fblock" style="margin-left:7vw;">
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <h4>Lanthanoid<br>Series</h4>
+    </td>
+    <td class="laseries">
+        <button id="La" name="n57lanthanum"">
+            <sup>57</sup>
+            <h3>La</h3>
+            <p>Lanthanum <br><small>138.9055</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Ce" name="n58cerium">
+            <sup>58</sup>
+            <h3>Ce</h3>
+            <p>Cerium <br><small>140.12</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Pr" name="n59praseodymium">
+            <sup>59</sup>
+            <h3>Pr</h3>
+            <p>Praseodymium <br><small>140.90765</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Nd" name="n60neodymium">
+            <sup>60</sup>
+            <h3>Nd</h3>
+            <p>Neodymium <br><small>144.24</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Pm" name="n61promethium">
+            <sup>61</sup>
+            <h3>Pm</h3>
+            <p>Promethium <br><small>145</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Sm" name="n62samarium">
+            <sup>62</sup>
+            <h3>Sm</h3>
+            <p>Samarium <br><small>150.36</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Eu" name="n63europium">
+            <sup>63</sup>
+            <h3>Eu</h3>
+            <p>Europium <br><small>151.964</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Gd" name="n64gadolinium">
+            <sup>64</sup>
+            <h3>Gd</h3>
+            <p>Gadolinium <br><small>157.25</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Tb" name="n65terbium">
+            <sup>65</sup>
+            <h3>Tb</h3>
+            <p>Terbium <br><small>158.92535</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Dy" name="n66dysprosium">
+            <sup>66</sup>
+            <h3>Dy</h3>
+            <p>Dysprosium <br><small>162.5</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Ho" name="n67holmium">
+            <sup>67</sup>
+            <h3>Ho</h3>
+            <p>Holmium <br><small>164.93032</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Er" name="n68erbium">
+            <sup>68</sup>
+            <h3>Er</h3>
+            <p>Erbium <br><small>167.259</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Tm" name="n69thulium">
+            <sup>69</sup>
+            <h3>Tm</h3>
+            <p>Thulium <br><small>168.93421</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Yb" name="n70ytterbium">
+            <sup>70</sup>
+            <h3>Yb</h3>
+            <p>Ytterbium <br><small>173.04</small></p>
+        </button>
+    </td>
+    <td class="laseries">
+        <button id="Lu" name="n71lutetium">
+            <sup>71</sup>
+            <h3>Lu</h3>
+            <p>Lutetium <br><small>174.96681</small></p>
+        </button>
+    </td>
+  </tr>
+
+  
+  <tr>
+    <td colspan="2" style="text-align: center;">
+      <h4>Actinoid<br>Series</h4>
+    </td>
+    <td class="acseries">
+        <button id="Ac" name="n89actinium">
+            <sup>89</sup>
+            <h3>Ac</h3>
+            <p>Actinium <br><small>227</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Th" name="n90thorium">
+            <sup>90</sup>
+            <h3>Th</h3>
+            <p>Thorium <br><small>232.0377</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Pa" name="n91protactinium">
+            <sup>91</sup>
+            <h3>Pa</h3>
+            <p>Protactinium <br><small>231.0359</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="U" name="n92uranium">
+            <sup>92</sup>
+            <h3>U</h3>
+            <p>Uranium <br><small>238.0289</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Np" name="n93neptunium">
+            <sup>93</sup>
+            <h3>Np</h3>
+            <p>Neptunium <br><small>237</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Pu" name="n94plutonium">
+            <sup>94</sup>
+            <h3>Pu</h3>
+            <p>Plutonium <br><small>244</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Am" name="n95americium">
+            <sup>95</sup>
+            <h3>Am</h3>
+            <p>Americium <br><small>243</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Cm" name="n96curium">
+            <sup>96</sup>
+            <h3>Cm</h3>
+            <p>Curium <br><small>247</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Bk" name="n97berkelium">
+            <sup>97</sup>
+            <h3>Bk</h3>
+            <p>Berkelium <br><small>247</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Cf" name="n98californium">
+            <sup>98</sup>
+            <h3>Cf</h3>
+            <p>Californium <br><small>251</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Es" name="n99einstenium">
+            <sup>99</sup>
+            <h3>Es</h3>
+            <p>Einsteinium <br><small>252</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Fm" name="n100fermium">
+            <sup>100</sup>
+            <h3>Fm</h3>
+            <p>Fermium <br><small>257</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Md" name="n101mendelevium">
+            <sup>101</sup>
+            <h3>Md</h3>
+            <p>Mendelevium <br><small>258</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="No" name="n102nobelium">
+            <sup>102</sup>
+            <h3>No</h3>
+            <p>Nobelium <br><small>259</small></p>
+        </button>
+    </td>
+    <td class="acseries">
+        <button id="Lr" name="n103lawrencium">
+            <sup>103</sup>
+            <h3>Lr</h3>
+            <p>Lawrencium <br><small>266</small></p>
+        </button>
+    </td>
+  </tr>
+</table>
+</body>
+
+</html>

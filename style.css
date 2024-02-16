@@ -1,0 +1,81 @@
+body{
+  background-color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 5px;
+  padding: 20px;
+  color:white;
+}
+
+sup{
+  float:left;
+}
+
+td{
+  border-radius: 5px;
+}
+
+
+button{
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 70%;
+  border: none;
+  color:white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.78);
+}
+
+
+.amtl{
+  background: #f40b87;
+  box-shadow: 0 0 0.5rem #f40b87;
+}
+
+.aemtl{
+  background: #f00bf4;
+  box-shadow:0 0 0.5rem #f00bf4;
+}
+
+.metal{
+  background: #7accf5;
+  box-shadow: 0 0 0.5rem #7accf5;
+}
+
+.nonmtl{
+  background: #4d79ff;
+  box-shadow: 0 0 0.5rem #4d79ff;
+}
+
+.metalloid{
+  background: #5cff8d;
+  box-shadow: 0 0 0.5rem #5cff8d;
+}
+
+.pmetal{
+  background: #f44343;
+  box-shadow: 0 0 0.5rem #f44343;
+}
+
+.halo{
+  background: #f4f44f;
+  box-shadow: 0 0 0.5rem #f4f44f;
+}
+
+.noble{
+  background: #ff7b00;
+  box-shadow: 0 0 0.5rem #ff7b00;
+}
+
+.laseries{
+  background: #d4ff00;
+  box-shadow: 0 0 0.5rem #d4ff00;
+}
+
+.acseries{
+  background: #ff8f8f;
+  box-shadow: 0 0 0.5rem #ff8f8f;
+}
